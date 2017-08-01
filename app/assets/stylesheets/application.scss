@@ -14,9 +14,12 @@
  *= require_self
  */
 
+$green: #a0ce4e;
 
 
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 .nav-colour {
 	background-color: #d4d3d1!important;
@@ -58,19 +61,94 @@
 .jumbotron-me {
 	width: 100%;
 	height: auto;
+	color: white;
+	border-radius: 0px!important;
+}
+
+.jumbotron {
+	margin-bottom: 0px!important;
+}
+
+
+.carousel-caption {
+	bottom: 25%!important;
 }
 
 .welcome-heading {
-	transition: none;
-    text-align: inherit;
-    line-height: 18px;
-    border-width: 0px;
-    margin: 0px;
-    padding: 0px;
-    letter-spacing: 10px;
-    font-size: 20px;
+	padding: 0;
+    color: #ffffff;
+    font-size: 70px;
+    font-style: normal;
+    line-height: 84px;
+    // margin-bottom: 200px;
+    letter-spacing: 1px;
+    display: inline-block;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+    text-transform: uppercase;
 }
 
+.welcome-heading-small {
+	padding: 0;
+    color: #a0ce4e!important;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 84px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    display: inline-block;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+
+}
+
+.welcome-heading-serve {
+	padding: 0;
+    color: #a0ce4e!important;
+    font-style: normal;
+    line-height: 84px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    display: inline-block;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+
+}
+
+.hr-services {
+	background-color: $green;
+	width: 20%;
+}
+
+.services-btn {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: width 2s; /* Safari */
+    -webkit-transition: height 2s;
+    transition: width 2s;
+    transition: height 2s;
+}
+
+.services-btn:hover {
+		// width: 250px!important;
+		height: 60px!important;
+
+    }
+
+
+
+.serv-icons {
+	background: #fbea1f;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 15%!important;
+}
+
+.icons {
+	margin-top: 15%!important;
+}
 
 footer {
 	background-color: #000000;

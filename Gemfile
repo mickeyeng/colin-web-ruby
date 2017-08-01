@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem "jquery-rails"
 gem 'jquery-ui-rails' 
+gem 'font-awesome-sass'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
