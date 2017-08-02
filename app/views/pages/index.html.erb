@@ -1,27 +1,37 @@
-
+<%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"%>
 <%= render 'layouts/nav'  %>
 <div class="main-img">
 	<%= image_tag("roof-dark.jpg", class:'img-responsive, main-img') %>
     <div class="carousel-caption">
-	    <div class="coL-lg-12">
-	    	 <h3 data-aos="fade-down" data-aos-delay="800" class="welcome-heading-small">We are experts in the roofing business</h3>
-		 </div>
-		 <div class="col-lg-12">
-	     	 <h1 data-aos="fade-right" data-aos-delay="500" class="welcome-heading">Welcome to McCluskey roofing</h1>
-	 	 </div>
-	 	 <div class="col-lg-12">
-	    	 <h3 data-aos="fade-up" data-aos-delay="800" class="welcome-heading-serve">Our experts are ready to serve you...</h3>
-		 </div>
+    	<div class="container">
+    		<div class="row">
+			    <div class="col-lg-12 col-xs-12">	
+			    	 <h3 class="welcome-heading-small col-xs-6" data-aos="fade-down" data-aos-delay="800">We are experts in the roofing business</h3>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-lg-12 col-xs-12">
+			     	 <h1 class="welcome-heading hidden-sm-down" data-aos="fade-right" data-aos-delay="500">Welcome to McCluskey roofing</h1>
+			     	  <h1 class="welcome-heading-small-device hidden-md-up" data-aos="fade-right" data-aos-delay="500">Welcome to McCluskey roofing</h1>
+			 	 </div>
+		 	 </div>
+		 	 <div class="row">
+			    <div class="col-lg-12 col-xs-12">	
+			    	 <h3 class="welcome-heading-serve col-xs-6" data-aos="fade-up" data-aos-delay="800">Our experts are ready to serve you...</h3>
+				 </div>
+			 </div>
+			 
+		</div>
 	</div>
 </div>
 
 <div style="background-color: rgba(54, 72, 125, 0.86)!important;!important" class="jumbotron jumbotron-me">
 	<div class="container">
 	<br>
-		<h3 style="text-align: center;">If you have any roofing problems we are here to help </h3>
+		<h3 data-aos="zoom-in" style="text-align: center;">If you have any roofing problems we are here to help </h3>
 	</div>
 </div>
-<div style="background-color: #a0ce4e!important" class="jumbotron jumbotron-me">
+<div style="background-color: #fbea1f!important; color: black" class="jumbotron jumbotron-me">
 	<h2 style="text-align: center">About us</h2>
 	<br>
 	<p style="text-align: center" class="mx-auto">mpington Roofing Services Ltd was established in 1990. It was founded by the company director and is now a family run business.
@@ -42,7 +52,7 @@
 		<br>
 		<br>
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-4" data-aos="fade-right">
 				<%= image_tag("roof/1.jpg", class: 'img-responsive' ) %>
 				<br>
 				<br>
@@ -50,7 +60,7 @@
 				<hr class="hr-services">
 				<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a t</p>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4" data-aos="fade-down">
 				<%= image_tag("roof/2.jpg", class: 'img-responsive' ) %>
 				<br>
 				<br>
@@ -58,7 +68,7 @@
 				<hr class="hr-services">
 				<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a t</p>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4" data-aos="fade-left">
 				<%= image_tag("roof/3.jpg", class: 'img-responsive' ) %>
 				<br>
 				<br>
@@ -80,91 +90,80 @@
 	<div class="container">
 	<div class="mx-auto">
 		<h4 style="text-align: center;">SOLVING ANY OF YOUR ROOFING PROBLEMS</h4>
+		<hr class="hr-services">
 	</div>
 	<br>
 	<br>
 		<br>
 		<div class="service-icons-wrapper">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4" data-aos="fade-down">
 					<div class="serv-icons mx-auto">
 						<i class="fa icons fa-home fa-3x" aria-hidden="true"></i>
-						<br>
-						<br>
-						<br>
+						<br><br><br>
 						<h4>Test</h4>
 						<br>
 					<br>
 				</div>
 				<br><br><br>
-				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>					
+				<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>					
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4" data-aos="fade-down">
 					<div class="serv-icons mx-auto">
 						<i class="icon icons fa fa-paint-brush fa-3x" aria-hidden="true"></i>
-						<br>
-						<br>
-						<br>
+						<br><br><br>
 						<h4>Test</h4>
 						<br>
 					<br>
 					</div>
 					<br><br><br>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+					<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4" data-aos="fade-down">
 					<div class="serv-icons mx-auto">
 						<i class="icon icons fa fa-clock-o fa-3x" aria-hidden="true"></i>
-						 <br>
-						<br>
-						<br>
+						<br><br><br>
 						<h4>Test</h4>
 						<br>
 					<br>
 					</div>
 					<br><br><br>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+					<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 				</div>
 				</div>
 					<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4" data-aos="fade-up">
 						<div class="serv-icons mx-auto">
 							<i class="icon icons fa fa-wrench fa-3x" aria-hidden="true"></i>
-							<br>
-							<br>
-							<br>
+							<br><br><br>
 							<h4>Test</h4>
 							<br>
 						<br>
 						</div>
 						<br><br><br>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+						<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4" data-aos="fade-up">
 						<div class="serv-icons mx-auto">
-							<i class="icon icons fa fa-wrench fa-3x" aria-hidden="true"></i>
-							<br>
-							<br>
-							<br>
+							<i class="icon icons fa fa-recycle fa-3x" aria-hidden="true"></i>
+							<br><br><br>
 							<h4>Test</h4>
 							<br>
 						<br>
 						</div>
 						<br><br><br>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+						<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4" data-aos="fade-up">
 						<div class="serv-icons mx-auto">
-							<i class="icon icons fa fa-wrench fa-3x" aria-hidden="true"></i>
-							<br>
-							<br>
-							<br>
+							<i class="icon icons fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+							<br><br><br>
 							<h4>Test</h4>
 							<br>
 						<br>
 						</div>
 						<br><br><br>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+						<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 					</div>
 					</div>
 				</div>
@@ -172,5 +171,88 @@
 			</div>
 		</div>
 	</div>
+	<div class="jumbotron-me jumbotron">
+		<div class="container gallery-container">
+		<h4 style="text-align: center; color: black">Recent projects</h4>
+		<hr class="hr-services">
+				    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="https://s3-eu-west-1.amazonaws.com/louiseenglishchildminding.co.uk/img/large/22.jpg">
+                    <%= image_tag("roof/example-1.jpg", class: 'img-responsive col-lg-12 thumb-img') %>
+                </a>
+                    <div class="caption">
+                        <h3 class="thumb-h3">Cammock Avenue, Carlisle</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="https://s3-eu-west-1.amazonaws.com/louiseenglishchildminding.co.uk/img/large/22.jpg">
+                    <%= image_tag("roof/example-2.jpg", class: 'img-responsive col-lg-12 thumb-img') %>
+                </a>
+                    <div class="caption">
+                        <h3 class="thumb-h3">Denton Holme, Carlisle</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="https://s3-eu-west-1.amazonaws.com/louiseenglishchildminding.co.uk/img/large/22.jpg">
+                    <%= image_tag("roof/example-3.jpg", class: 'img-responsive col-lg-12 thumb-img') %>
+                </a>
+                    <div class="caption">
+                        <h3 class="thumb-h3">Glencote, Scaleby</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="https://s3-eu-west-1.amazonaws.com/louiseenglishchildminding.co.uk/img/large/22.jpg">
+                    <%= image_tag("roof/example-4.jpg", class: 'img-responsive col-lg-12 thumb-img') %>
+                </a>
+                    <div class="caption">
+                        <h3 class="thumb-h3">Houghton, Carlisle</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="https://s3-eu-west-1.amazonaws.com/louiseenglishchildminding.co.uk/img/large/22.jpg">
+                    <%= image_tag("roof/example-5.jpg", class: 'img-responsive col-lg-12 thumb-img') %>
+                </a>
+                    <div class="caption">
+                        <h3 class="thumb-h3">Keld Road, Belle Vue, Carlisle</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="https://s3-eu-west-1.amazonaws.com/louiseenglishchildminding.co.uk/img/large/22.jpg">
+                    <%= image_tag("roof/example-6.jpg", class: 'img-responsive col-lg-12 thumb-img') %>
+                </a>
+                    <div class="caption">
+                        <h3 class="thumb-h3">Scaleby, Carlisle</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+		</div>
+	</div>
 </div>
 <%= render 'layouts/footer'  %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>

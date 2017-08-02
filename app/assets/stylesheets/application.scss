@@ -14,7 +14,7 @@
  *= require_self
  */
 
-$green: #a0ce4e;
+$yellow: rgba(255, 255, 0, 0.76);
 
 
 @import "bootstrap";
@@ -22,7 +22,7 @@ $green: #a0ce4e;
 @import "font-awesome";
 
 .nav-colour {
-	background-color: #d4d3d1!important;
+	background-color: rgba(255, 255, 0, 0.7)!important;
 	opacity: 0.9;
 }
 
@@ -70,53 +70,48 @@ $green: #a0ce4e;
 }
 
 
-.carousel-caption {
-	bottom: 25%!important;
-}
+ .carousel-caption {
+    margin-bottom: 15%!important;
+    }
 
 .welcome-heading {
-	padding: 0;
-    color: #ffffff;
-    font-size: 70px;
-    font-style: normal;
-    line-height: 84px;
+	
     // margin-bottom: 200px;
     letter-spacing: 1px;
     display: inline-block;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
-    text-transform: uppercase;
+    text-transform: uppercase!important;
+    line-height: 84px!important;
+    font-size: 60px!important;
 }
 
 .welcome-heading-small {
-	padding: 0;
-    color: #a0ce4e!important;
-    text-transform: uppercase;
-    font-style: normal;
-    line-height: 84px;
-    margin-bottom: 0px;
+	
+    color: $yellow!important;
     letter-spacing: 1px;
     display: inline-block;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
+    text-transform: uppercase!important;
+    line-height: 38px!important;
 
 }
 
 .welcome-heading-serve {
+
 	padding: 0;
-    color: #a0ce4e!important;
-    font-style: normal;
-    line-height: 84px;
-    margin-bottom: 0px;
+    color: $yellow!important;
     letter-spacing: 1px;
     display: inline-block;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
+    line-height: 38px!important;
 
 }
 
 .hr-services {
-	background-color: $green;
+	background-color: $yellow;
 	width: 20%;
 }
 
@@ -136,6 +131,11 @@ $green: #a0ce4e;
     }
 
 
+.thumb-img {
+	padding: 0px;
+	border-radius: 0!important;
+}
+
 
 .serv-icons {
 	background: #fbea1f;
@@ -144,10 +144,27 @@ $green: #a0ce4e;
     border-radius: 50%;
     text-align: center;
     margin-top: 15%!important;
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+
+ .serv-icons:hover {
+    	background: black;
+    }
+
+
+
+.service-text {
+	text-align: center;
 }
 
 .icons {
 	margin-top: 15%!important;
+}
+
+
+.thumb-h3 {
+    color: black;
 }
 
 footer {
@@ -164,6 +181,34 @@ footer {
 
 	}
 
-	
 
+
+@include media-breakpoint-up(xs) { 
+
+        .carousel-caption {
+            margin-bottom: 25%;
+        }
+
+        .navbar {
+            height: auto!important;
+        }
+
+        .nav-colour {
+            background-color: #52628f !important;
+            opacity: 0.9;
+        }
+
+        // .welcome-heading-small {
+        //     text-transform: uppercase!important;
+        //     line-height: 40px !important;
+        //     font-size: 25px !important;
+        // }
+ }
+@include media-breakpoint-up(sm) { 
+ }
+@include media-breakpoint-up(md) { 
+ }
+@include media-breakpoint-up(lg) { 
+ }
+@include media-breakpoint-up(xl) {  }
 

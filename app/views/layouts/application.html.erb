@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Roof</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,9 +13,13 @@
   <body>
   <div class="wrapper">
     <%= yield %>
+    <%= render 'layouts/footer'  %>
   </div>
   </body>
 </html>
+
+
+
 <script>
     AOS.init({
       offset: 200,
@@ -21,4 +27,4 @@
       easing: 'ease-in-sine',
       delay: 100,
     });
-  </script>
+</script>
