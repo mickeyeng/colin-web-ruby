@@ -1,0 +1,55 @@
+<nav style="background-color: transparent;" class="navbar navbar-toggleable-md navbar-inverse fixed-top navbar-light">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><%= image_tag("logo.jpg", class: 'img-responsive ') %></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+           <%= link_to('Home', '/Home#about', class:'nav-link', style: 'color: black!important;') %>
+            <hr style="background-color: white!important;" class="hidden-md-up">
+          </li>
+          <li class="nav-item">
+            <a style="color: black!important;" class="nav-link" href="#">About</a>
+            <hr style="background-color: white!important;" class="hidden-md-up">
+          </li>
+          <li class="nav-item">
+            <a style="color: black!important;" class="nav-link" href="#">Services</a>
+            <hr style="background-color: white!important;" class="hidden-md-up">
+          </li>
+           <li class="nav-item">
+            <%= link_to('Contact', '/contacts/new', class:'nav-link') %>
+            <hr style="background-color: white!important;" class="hidden-md-up">
+          </li>
+          <li class="nav-item">
+            <a style="color: black!important;" class="nav-link" href="#">Login</a>
+            <hr style="background-color: white!important;" class="hidden-md-up">
+          </li>
+        </ul>
+        <div class="col-lg-4">
+              <p class="nav-link">01228 597024</p>
+          </div>
+      </div>
+    </nav>
+
+
+<script>
+  $(document).ready(function(){
+      $(window).scroll(function(){
+          if ($(window).scrollTop() > 100) {
+              $('.navbar').css('position','fixed');
+              $('.navbar-inverse').css('background-colour','#d4d3d1!important');
+              $('.navbar').addClass('nav-colour-all');
+
+            
+
+          } else {
+            $('.navbar').css('position','absolute');
+            $('.navbar').removeClass('nav-colour-all');
+            $('.navbar').addClass('.nav-colour-top');
+           
+          }
+       
+    });
+});
+</script>

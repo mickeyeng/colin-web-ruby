@@ -42,7 +42,9 @@ $yellow: rgba(255, 255, 0, 0.76);
 	}
 
 	a:hover {
-
+        background-color: white;
+        opacity: 0.7;
+        transition: all 0.3s ease 0s;
 	}
 
 	.nav-link {
@@ -51,6 +53,10 @@ $yellow: rgba(255, 255, 0, 0.76);
 	    transition: all 0.3s ease 0s;
 	    color: white!important;
 	}
+
+    .nav-link:hover {
+        color: black!important;
+    }
 
 	li {
 		margin-right: 30px;
@@ -70,6 +76,8 @@ $yellow: rgba(255, 255, 0, 0.76);
 }
 
 
+
+
  .carousel-caption {
     margin-bottom: 15%!important;
     }
@@ -81,7 +89,6 @@ $yellow: rgba(255, 255, 0, 0.76);
     display: inline-block;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
-    text-transform: uppercase!important;
     line-height: 84px!important;
     font-size: 60px!important;
 }
@@ -93,7 +100,6 @@ $yellow: rgba(255, 255, 0, 0.76);
     display: inline-block;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
-    text-transform: uppercase!important;
     line-height: 38px!important;
 
 }
@@ -115,6 +121,31 @@ $yellow: rgba(255, 255, 0, 0.76);
 	width: 20%;
 }
 
+.hr-contact {
+    background-color: $yellow;
+    width: 100%;
+}
+
+.hr-contact-text {
+    width: 50%;
+    margin-left: 1%;
+    border: 2px solid rgba(255, 255, 0, 0.76);
+}
+
+.form {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+.form-input-name {
+    margin-left: 0%!important;
+    width: 120%!important;
+}
+
+.form-input-email {
+    margin-left: -7%!important;
+    width: 120%!important;
+}
 .services-btn {
     width: 100%;
     height: 100%;
@@ -148,6 +179,18 @@ $yellow: rgba(255, 255, 0, 0.76);
     transition: 0.8s ease;
 }
 
+.serv-icons-contact {
+    background: white;
+    width: 83px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 10%!important;
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    color: black;
+}
+
  .serv-icons:hover {
     	background: black;
     }
@@ -158,17 +201,64 @@ $yellow: rgba(255, 255, 0, 0.76);
 	text-align: center;
 }
 
-.icons {
-	margin-top: 15%!important;
-}
 
 
 .thumb-h3 {
     color: black;
 }
 
+
+.contact-image-header {
+    height: 200px;
+    width: 100%;
+
+}
+
+.contact-text-wrapper {
+    position: relative;
+    margin-top: -33%;
+    padding-bottom: 250px;
+}
+
+.contact-icons {
+   margin-top: 13%!important;
+}
+
+.submit-contact {
+    background: rgba(255, 255, 0, 0.76) none repeat scroll 0 0;
+    border: 0 none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    height: inherit;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.row-no-padding {
+   
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  
+}
+
+// footer
 footer {
 	background-color: #000000;
+    
+    a {
+        color: #b3b3b3!important;
+        // float: left;
+    }
+
+}
+
+.footer-contact {
+    text-decoration: none!important;
+    list-style-type: none!important;
+    list-style: none;
 }
 
 .footer {
@@ -176,10 +266,87 @@ footer {
 		height: auto;
 		width: 100%;
 		color: white;
-		position: absolute;
-    	line-height: 60px;
+    	line-height: 20px;
+        padding: 80px 0 30px;
+        color: #b3b3b3!important;
 
-	}
+}
+
+.footer-bottom {
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.fa-paper-plane-o {
+    color: #F4BC16!important;
+}
+
+.contact-text {
+    display: inline-flex;
+}
+
+
+.hr-footer {
+    background-color: #f4bc16;
+    float: left;
+    width: 85%;
+    margin-top: 0%;
+}
+
+.footer-links {
+    text-decoration: none;
+
+}
+
+.footer:a {
+    text-align: center!important;
+}
+// end of footer
+
+
+.services-bottom-wrapper {
+    margin-top: 5%;
+}
+
+.services-top-wrapper {
+    margin-top: 5%;
+}
+
+
+.phone-bottom {
+    font-family: 'Raleway';
+    font-size: 22px;
+    line-height: 15px;
+    color: #FFF;
+    padding: 1em 0;
+    margin: 0;
+    margin-left: -30%!important;
+    margin-top: 10px;
+
+}
+
+.address-bottom {
+    
+}
+
+
+.email-bottom {
+    
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+
 
 
 
@@ -195,6 +362,11 @@ footer {
 
         .nav-colour {
             background-color: #52628f !important;
+            opacity: 0.9;
+        }
+
+         .nav-colour-all {
+            background-color: white!important;
             opacity: 0.9;
         }
 

@@ -1,7 +1,6 @@
-<%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"%>
-<%= render 'layouts/nav'  %>
+ <%= render 'layouts/nav' %>
 <div class="main-img">
-	<%= image_tag("roof-dark.jpg", class:'img-responsive, main-img') %>
+	<%= image_tag("roof/mike-1-large-dark.png", class:'img-responsive, main-img') %>
     <div class="carousel-caption">
     	<div class="container">
     		<div class="row">
@@ -12,7 +11,7 @@
 			 <div class="row">
 				 <div class="col-lg-12 col-xs-12">
 			     	 <h1 class="welcome-heading hidden-sm-down" data-aos="fade-right" data-aos-delay="500">Welcome to McCluskey roofing</h1>
-			     	  <h1 class="welcome-heading-small-device hidden-md-up" data-aos="fade-right" data-aos-delay="500">Welcome to McCluskey roofing</h1>
+			     	  <h1 class="welcome-heading-small-device hidden-md-up" data-aos="fade-right" data-aos-delay="500">WELCOME TO McCLUSKEY ROOFING</h1>
 			 	 </div>
 		 	 </div>
 		 	 <div class="row">
@@ -25,25 +24,26 @@
 	</div>
 </div>
 
-<div style="background-color: rgba(54, 72, 125, 0.86)!important;!important" class="jumbotron jumbotron-me">
+<div style="background-color: rgba(54, 72, 125, 0.86)!important;" class="jumbotron jumbotron-me">
 	<div class="container">
 	<br>
+	<div id="about">
 		<h3 data-aos="zoom-in" style="text-align: center;">If you have any roofing problems we are here to help </h3>
 	</div>
+	</div>
 </div>
-<div style="background-color: #fbea1f!important; color: black" class="jumbotron jumbotron-me">
-	<h2 style="text-align: center">About us</h2>
-	<br>
-	<p style="text-align: center" class="mx-auto">mpington Roofing Services Ltd was established in 1990. It was founded by the company director and is now a family run business.
+	<div style="background-color: #fbea1f!important; color: black" class="jumbotron jumbotron-me">
+		<h2 style="text-align: center">About us</h2>
+		<br>
+		<p style="text-align: center" class="mx-auto">mpington Roofing Services Ltd was established in 1990. It was founded by the company director and is now a family run business.
 
-	We provide a very competitive roofing service for all roofing undertaken whether it be domestic or commercial. We pride ourselves on only using competent tradespersons that work to the high standard we and the customer expect.
+		We provide a very competitive roofing service for all roofing undertaken whether it be domestic or commercial. We pride ourselves on only using competent tradespersons that work to the high standard we and the customer expect.
 
-	This enables us to provide a prompt, reliable and professional service at all times. In 2004 we received accreditation from SAFEcontractor - which is a contractor scheme for businesses.
+		This enables us to provide a prompt, reliable and professional service at all times. In 2004 we received accreditation from SAFEcontractor - which is a contractor scheme for businesses.
 
-	As stated on the SAFEcontractor website" Many large organisations now use SAFEcontractor as their primary means of selecting contractors". For information regarding this scheme please click the SAFEcontractor logo shown further on in our website
-	</p>
-</div>
-
+		As stated on the SAFEcontractor website" Many large organisations now use SAFEcontractor as their primary means of selecting contractors". For information regarding this scheme please click the SAFEcontractor logo shown further on in our website
+		</p>
+	</div>
 <div style="background-color: #f5f5f5!important; color: black;" class="jumbotron jumbotron-me">
 	<div class="container">
 		<h2 style="text-align: center;">Services</h2>
@@ -53,7 +53,7 @@
 		<br>
 		<div class="row">
 			<div class="col-lg-4" data-aos="fade-right">
-				<%= image_tag("roof/1.jpg", class: 'img-responsive' ) %>
+				<%= image_tag("roof/mike-3.JPG", class: 'img-responsive' ) %>
 				<br>
 				<br>
 				<h4 style="text-align: center">IMPROVE YOUR HOUSE APPEARANCE</h4>
@@ -61,7 +61,7 @@
 				<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a t</p>
 			</div>
 			<div class="col-lg-4" data-aos="fade-down">
-				<%= image_tag("roof/2.jpg", class: 'img-responsive' ) %>
+				<%= image_tag("roof/mike-1.JPG", class: 'img-responsive' ) %>
 				<br>
 				<br>
 				<h4 style="text-align: center">KEEPING YOUR HOME SAFE, DRY AND COMFORTABLE</h4>
@@ -69,7 +69,7 @@
 				<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a t</p>
 			</div>
 			<div class="col-lg-4" data-aos="fade-left">
-				<%= image_tag("roof/3.jpg", class: 'img-responsive' ) %>
+				<%= image_tag("roof/mike-2.JPG", class: 'img-responsive' ) %>
 				<br>
 				<br>
 				<h4 style="text-align: center">WE'LL GIVE YOUR ROOF A NEW LIFE!</h4>
@@ -92,83 +92,75 @@
 		<h4 style="text-align: center;">SOLVING ANY OF YOUR ROOFING PROBLEMS</h4>
 		<hr class="hr-services">
 	</div>
-	<br>
-	<br>
-		<br>
-		<div class="service-icons-wrapper">
+		<div class="services-top-wrapper" data-aos="fade-down">
 			<div class="row">
-				<div class="col-lg-4" data-aos="fade-down">
+				<div class="col-lg-4">
 					<div class="serv-icons mx-auto">
-						<i class="fa icons fa-home fa-3x" aria-hidden="true"></i>
-						<br><br><br>
-						<h4>Test</h4>
-						<br>
-					<br>
+						<%= image_tag("vectors/house-white.png", style: 'margin-top: 10%; width: 60px;' ) %>
+					</div>
 				</div>
-				<br><br><br>
-				<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>					
-				</div>
-				<div class="col-lg-4" data-aos="fade-down">
+				<div class="col-lg-4">
 					<div class="serv-icons mx-auto">
-						<i class="icon icons fa fa-paint-brush fa-3x" aria-hidden="true"></i>
-						<br><br><br>
-						<h4>Test</h4>
-						<br>
-					<br>
+						<%= image_tag("vectors/HAMMER.png", style: 'margin-top: 21%;' ) %>
 					</div>
-					<br><br><br>
-					<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 				</div>
-				<div class="col-lg-4" data-aos="fade-down">
+				<div class="col-lg-4">
 					<div class="serv-icons mx-auto">
-						<i class="icon icons fa fa-clock-o fa-3x" aria-hidden="true"></i>
-						<br><br><br>
-						<h4>Test</h4>
-						<br>
-					<br>
-					</div>
-					<br><br><br>
-					<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-				</div>
-				</div>
-					<div class="row">
-					<div class="col-lg-4" data-aos="fade-up">
-						<div class="serv-icons mx-auto">
-							<i class="icon icons fa fa-wrench fa-3x" aria-hidden="true"></i>
-							<br><br><br>
-							<h4>Test</h4>
-							<br>
-						<br>
-						</div>
-						<br><br><br>
-						<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-					</div>
-					<div class="col-lg-4" data-aos="fade-up">
-						<div class="serv-icons mx-auto">
-							<i class="icon icons fa fa-recycle fa-3x" aria-hidden="true"></i>
-							<br><br><br>
-							<h4>Test</h4>
-							<br>
-						<br>
-						</div>
-						<br><br><br>
-						<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-					</div>
-					<div class="col-lg-4" data-aos="fade-up">
-						<div class="serv-icons mx-auto">
-							<i class="icon icons fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
-							<br><br><br>
-							<h4>Test</h4>
-							<br>
-						<br>
-						</div>
-						<br><br><br>
-						<p class="service-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-					</div>
+						<%= image_tag("vectors/gutter.png", style: 'margin-top: 23%;' ) %>
 					</div>
 				</div>
-				<br>
 			</div>
+			<div class="row">
+				<div class="col-lg-4">
+						<br>
+					<div class="mx-auto">
+						<h4 style="text-align: center; text-transform: uppercase;">Tiling</h4>
+
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<br>
+					<h4 style="text-align: center; text-transform: uppercase;">UPVC Cladding</h4>
+				</div>
+				<div class="col-lg-4">
+					<br>
+					<h4 style="text-align: center; text-transform: uppercase;">Guttering</h4>
+				</div>
+			</div>
+		</div>
+		<div class="services-bottom-wrapper" data-aos="fade-up">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="serv-icons mx-auto">
+						<i style="margin-top: 15%;" class="icon icons fa fa-wrench fa-3x"></i>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="serv-icons mx-auto">
+						<%= image_tag("vectors/window.png", style: 'margin-top: 23%;' ) %>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="serv-icons mx-auto">
+						<%= image_tag("vectors/chimney.png", style: 'margin-top: 10%;' ) %>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<br>
+					<h4 style="text-align: center; text-transform: uppercase;">Fascias and soffits</h4>
+				</div>
+				<div class="col-lg-4">
+					<br>
+					<h4 style="text-align: center; text-transform: uppercase;">Velux installers</h4>
+				</div>
+				<div class="col-lg-4">
+					<br>
+					<h4 style="text-align: center; text-transform: uppercase;">Chimney stack repairs & removals</h4>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 	<div class="jumbotron-me jumbotron">
@@ -251,8 +243,10 @@
 		</div>
 	</div>
 </div>
-<%= render 'layouts/footer'  %>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
+
+

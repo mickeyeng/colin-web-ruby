@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Roof</title>
+    <title>McCluskey Roofing</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"%>
   </head>
 
   <body>
   <div class="wrapper">
     <%= yield %>
+
+   
+
+  
+    <%= render 'layouts/contact-footer'  %>
     <%= render 'layouts/footer'  %>
   </div>
   </body>
@@ -27,4 +33,36 @@
       easing: 'ease-in-sine',
       delay: 100,
     });
+</script>
+
+
+
+<script>
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        // //scroll and show hash
+        // $('html, body').animate({
+        //     'scrollTop': $target.offset().middle
+        // }, 1000, 'swing', function () {
+        //      window.location.hash = target;
+        // });
+
+
+        // dont show hash in url
+        $('html, body').animate({
+          'scrollTop': $target.offset().top
+
+        }, 1000, 'swing');
+
+
+
+
+        });
+
+});
 </script>

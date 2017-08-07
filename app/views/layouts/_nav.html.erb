@@ -6,11 +6,12 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+             <%= link_to('Home', 'pages/index', class:'nav-link') %>
             <hr style="background-color: white!important;" class="hidden-md-up">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+             <%= link_to('About', '#about', class:'nav-link') %>
             <hr style="background-color: white!important;" class="hidden-md-up">
           </li>
           <li class="nav-item">
@@ -18,11 +19,7 @@
             <hr style="background-color: white!important;" class="hidden-md-up">
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-            <hr style="background-color: white!important;" class="hidden-md-up">
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <%= link_to('Contact', '/contacts/new', class:'nav-link') %>
             <hr style="background-color: white!important;" class="hidden-md-up">
           </li>
         </ul>
@@ -38,7 +35,7 @@
       $(window).scroll(function(){
           if ($(window).scrollTop() > 100) {
               $('.navbar').css('position','fixed');
-              $('.navbar-inverse').css('background-colour','#d4d3d1!important');
+              $('.navbar-inverse').css('background-colour','white!important');
               $('.navbar').addClass('nav-colour');
 
             
