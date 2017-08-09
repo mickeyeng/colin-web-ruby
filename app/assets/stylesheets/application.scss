@@ -14,7 +14,7 @@
  *= require_self
  */
 
-$yellow: rgba(255, 255, 0, 0.76);
+$yellow: rgba(244, 188, 22, 0.76);
 
 
 @import "bootstrap";
@@ -25,6 +25,8 @@ $yellow: rgba(255, 255, 0, 0.76);
 	background-color: rgba(255, 255, 0, 0.7)!important;
 	opacity: 0.9;
 }
+
+
 
 .wrapper {
 	width: 100%;
@@ -61,8 +63,12 @@ $yellow: rgba(255, 255, 0, 0.76);
 	li {
 		margin-right: 30px;
 	}
+
 }
 
+ .contact-nav {
+        display: -webkit-inline-box;
+    }
 
 .jumbotron-me {
 	width: 100%;
@@ -169,7 +175,7 @@ $yellow: rgba(255, 255, 0, 0.76);
 
 
 .serv-icons {
-	background: #fbea1f;
+	background: #F4BC16!important;
     width: 83px;
     height: 83px;
     border-radius: 50%;
@@ -192,7 +198,7 @@ $yellow: rgba(255, 255, 0, 0.76);
 }
 
  .serv-icons:hover {
-    	background: black;
+    	background: black!important;
     }
 
 
@@ -269,7 +275,7 @@ footer {
     	line-height: 20px;
         padding: 80px 0 30px;
         color: #b3b3b3!important;
-
+        text-align: left!important;
 }
 
 .footer-bottom {
@@ -305,7 +311,13 @@ footer {
 .footer:a {
     text-align: center!important;
 }
+
+
+.email-footer {
+   word-wrap: break-word;
+}
 // end of footer
+
 
 
 .services-bottom-wrapper {
@@ -324,8 +336,9 @@ footer {
     color: #FFF;
     padding: 1em 0;
     margin: 0;
-    margin-left: -30%!important;
+    // margin-left: -30%;
     margin-top: 10px;
+    text-align: left!important;
 
 }
 
@@ -368,6 +381,23 @@ footer {
          .nav-colour-all {
             background-color: white!important;
             opacity: 0.9;
+        }
+
+
+        .footer {
+            text-align: center!important;
+
+        }
+
+        .hr-footer {
+            width: 100%;
+        }
+
+        .phone-bottom {
+            word-wrap:break-word;
+            line-height: 26px;
+            margin-left: 0%;
+            text-align: center!important; 
         }
 
         // .welcome-heading-small {
